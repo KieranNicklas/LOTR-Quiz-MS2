@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=MedievalSharp&display=swap');
+
+/* Global Styles */
+body { 
+    background-color: rgb(10, 12, 12);
+    font-family: "MedievalSharp", "Alegreya", sans-serif;
+    color: rgb(205, 214, 214);
+    font-size: 28px;
+}
+
+/*Title and Main Navigation*/
+#title {
+    text-align: center;
+}
+
+#chapters-outer {
+    border-style: solid;
+    border-color: rgb(205, 214, 214);
+    height: 750px;
+    margin: 50px 400px 0;
+}
+
+#how-to {
+    margin: 0 250px;
+}
+
+#how-to h3 {
+    text-align: center;
+}
+
+#how-to p {
+    text-align: justify;
+}
+
+#quiz-start {
+    text-align: center;
+    margin-top: 100px;
+}
