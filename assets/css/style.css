@@ -13,11 +13,11 @@ body {
     text-align: center;
 }
 
-#chapters-outer {
+#front-page-outer {
     border-style: solid;
     border-color: rgb(205, 214, 214);
     height: 750px;
-    margin: 50px 400px 0;
+    margin: 50px 20% 0;
 }
 
 #how-to {
@@ -35,4 +35,52 @@ body {
 #quiz-start {
     text-align: center;
     margin-top: 100px;
+}
+
+#quiz-start > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* Styling for Chapter List and Questions */
+.chapters {
+    display: flex;
+    text-align: center;
+}
+
+
+.wide-level {
+    border-style: solid;
+    border-color: rgb(205, 214, 214);
+    height: 750px;
+    margin: 50px 5% 0;
+}
+
+.wide-level > a {
+    left: 45%;
+    top: 10%;
+    position: relative;    
+}
+
+#question {
+    left: 55%;
+    width: 35%;
+    top: 15%;
+    position: relative;
+}
+
+#answers {
+    position: relative;
+    left: 55%;
+    top: 25%;
+    word-spacing: 8rem;
+}
+
+.answer-text:hover {
+    border-style: solid;
+    border-color: rgb(205, 214, 214);
 }
