@@ -47,27 +47,42 @@ body {
 }
 
 /* Styling for Chapter List and Questions */
-.chapters {
-    display: flex;
-    text-align: center;
+.narrow-level {
+    border-style: solid;
+    border-color: rgb(205, 214, 214);
+    height: 750px;
+    margin: 50px 20% 0;
+    justify-content: center;
 }
 
+.narrow-level > a {
+    left: 42.5%;
+    top: 10%;
+    position: relative;    
+}
 
 .wide-level {
     border-style: solid;
     border-color: rgb(205, 214, 214);
     height: 750px;
     margin: 50px 5% 0;
+    justify-content: center;
 }
 
-.wide-level > a {
-    left: 45%;
-    top: 10%;
-    position: relative;    
+.chapters {
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 20%;
+}
+
+.btn { 
+    cursor: pointer;
+    text-align: center;
 }
 
 #question {
-    left: 55%;
+    left: 25%;
     width: 35%;
     top: 15%;
     position: relative;
@@ -75,7 +90,7 @@ body {
 
 #answers {
     position: relative;
-    left: 55%;
+    left: 25%;
     top: 25%;
     word-spacing: 8rem;
 }

@@ -21,10 +21,41 @@
             <p>Receive your score at the end and find out whether you have destroyed the evil from Middle Earth forever</p>
         </div>
         <div id = "quiz-start">
-            <a href = "story.html" class="btn"><h4>Begin Story</h4></a>
+            <a onclick = "beginStory();" class = "btn">Begin Story</a>
         </div>
-    </section> 
-    <script src = "assets/js/script.js"></script>
+    </section>
+        <!--List of Chapters-->
+        <section id = "chapter-outer" class = "narrow-level hide">
+            <a onclick = "beginChapter('chapterOne');" class = "chapters btn">Chapter One - The Fellowship of the Ring</a>
+            <a onclick = "beginChapter('chapterTwo');" class = "chapters btn">Chapter Two - The Two Towers</a>
+            <a onclick = "beginChapter('chapterThree');" class = "chapters btn">Chapter Three - The Return of the King</a>
+        </section>
+        <!--Quiz Questions and Story Text -->
+        <section id = "question-container" class = "narrow-level hide">
+            <h3 id = "question"></h3>
+            <div id = "answers">
+                <div id = "answer-1" class = "answer-container">
+                    <p class = "answer-prefix">A.</p>
+                    <p class = "answer-text" data-number = "1"></p>             
+                </div>
+                <br>
+                <div id = "answer-2" class = "answer-container">
+                    <p class = "answer-prefix">B.</p>
+                    <p class = "answer-text" data-number = "2"></p>             
+                </div>
+                <br>
+                <div id = "answer-3" class = "answer-container">
+                    <p class = "answer-prefix">C.</p>
+                    <p class = "answer-text" data-number = "3"></p>             
+                </div>
+                <br>
+                <div id = "answer-4" class = "answer-container">
+                    <p class = "answer-prefix">D.</p>
+                    <p class = "answer-text" data-number = "4"></p>             
+                </div> 
+            </div>
+        </section>
     <script src = "assets/js/contstant.js"></script>
+    <script src = "assets/js/script.js"></script>
     <body>
 </html>

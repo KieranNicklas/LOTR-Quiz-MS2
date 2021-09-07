@@ -1,386 +1,127 @@
-const chapter_one_questions = [
+const rules = document.getElementById ('front-page-outer');
+const chapters = document.getElementById ('chapter-outer');
+const gameboard = document.getElementById ('question-container');
+const question = document.getElementById ('question');
+const answers = Array.from(document.getElementsByClassName ('answer-text'));
+const chapter_one_questions = [ 
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which heir the throne of Gondor cut off Sauron's finger and claimed the one ring for themselves?",
+        option1: "Isildur",
+        option2: "Denathor",
+        option3: "Aragon",
+        option4: "Éomer",
+        correct: 1,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What birthday was Bilbo Baggins celebraing the night he disapears?",
+        option1: "115th Birthday",
+        option2: "111th Birthday",
+        option3: "112th Birthday",
+        option4: "113th Birthday",
+        correct: 2,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "After Merry and Pippin light the large firework from Gandalf's stock, which creature appears when it explodes?",
+        option1: "An Eagle",
+        option2: "An Ent",
+        option3: "A Dragon",
+        option4: "A Nazgul",
+        correct: 3,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What two words does the creature Gollum shout when tortured about the Ring?",
+        option1: "Bilbo, Baggins",
+        option2: "Shire, Baggins",
+        option3: "The, Shire",
+        option4: "Ring, Baggins",
+        correct: 2,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_two_questions = [
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What is the name of the Inn found at Bree that the four Hobbits were to meet Gandalf at?",
+        option1: "The Green Dragon",
+        option2: "The Rusty Spoon",
+        option3: "The Horse and Cart",
+        option4: "The Prancing Pony",
+        correct: 4,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which weapon did the Wraith attack Froddo with at Weathertop?",
+        option1: "An Elvish Knife",
+        option2: "A Dwarfish Axe",
+        option3: "A Morgul Blade",
+        option4: "An Orc Sword",
+        correct: 3,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "After Lord Elrond declares that the one Ring should be destroyed, which character attempts to destory it?",
+        option1: "Legolas",
+        option2: "Froddo",
+        option3: "Gimli",
+        option4: "Boromir",
+        correct: 3,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which Character famously says the line 'One does not simply walk into Mordor'?",
+        option1: "Legolas",
+        option2: "Elrond",
+        option3: "Gimli",
+        option4: "Boromir",
+        correct: 4,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_three_questions [
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What was the name of the Lord of Moria, whose coffin the Fellowship come across in the mines?",
+        option1: "Gloin",
+        option2: "Balin",
+        option3: "Durin",
+        option4: "Dáin",
+        correct: 2,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which Hobbit knocks debris down the well in Moria to alert the Orcs to the Fellowships presence?",
+        option1: "Sam",
+        option2: "Froddo",
+        option3: "Merrin",
+        option4: "Pippin",
+        correct: 4,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What is the creature known as 'Durin's Bane' found in the mines?",
+        option1: "Balrog",
+        option2: "Smaug",
+        option3: "Shelob",
+        option4: "Mumakil",
+        correct: 1,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "What gift does the Lady Galadriel give to Froddo before the Fellowship leave LothLorien?",
+        option1: "The Light of Eärendil",
+        option2: "The Sting",
+        option3: "Mithril",
+        option4: "A Cloak",
+        correct: 1,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_four_questions [ 
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which character attempts to steal the ring from Froddo?",
+        option1: "Legolas",
+        option2: "Sam",
+        option3: "Boromir",
+        option4: "Aragon",
+        correct: 3,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which Uruk-Hai kills Boromir?",
+        option1: "Azog",
+        option2: "Gothmog",
+        option3: "Uglúk",
+        option4: "Lurtz",
+        correct: 4,
     },
     {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_five_questions [ 
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_six_questions [
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_seven_questions [ 
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_eight_questions [
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    }
-];
-
-const chapter_nine_questions [ 
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
-    },
-    {
-        question:
-        option1:
-        option2:
-        option3:
-        option4:
-        correct:
+        question: "Which two Hobbits are taken by the Uruk-Hai?",
+        option1: "Merry and Sam",
+        option2: "Pippin and Sam",
+        option3: "Merry and Pippin",
+        option4: "Sam and Froddo",
+        correct: 3,
     }
 ];
